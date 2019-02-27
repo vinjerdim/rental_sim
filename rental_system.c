@@ -39,13 +39,13 @@ int bus_current_location;       // Menyimpan posisi bus terkini
 int seats_taken;                // Menyimpan jumlah kursi bus yang terisi
 int bus_do_loop;                // Menandakan apakah bus sudah mulai berkeliling
 int bus_moving;                 // Menandakan apakah bus sedang bergerak atau diam
+int person_current_id;
 
 double mean_interarrival[4];    // Menyimpan rerata antar kedatangan pada setiap lokasi
 double travel_time[4];          // Menyimpan waktu tempuh antar lokasi
 double probability[3];          // Menyimpan peluang terpilihnya terminal 1 dan 2
 double bus_stop_time;           // Menyimpan waktu bus tiba pada suatu lokasi
 double loop_start_time;         // Menyimpan waktu bus memulai keliling
-double person_current_id;
 
 FILE *log_file, *stat_file;
 
@@ -64,7 +64,7 @@ int main() {
     probability[1] = 0.583;
     probability[2] = 1.0;
 
-    double simulation_duration = 3600 * 80;
+    double simulation_duration = 3600 * 4;
 
     init_simlib();
     maxatr = 4;
@@ -75,7 +75,7 @@ int main() {
     bus_stop_time = sim_time;
 
     bus_current_location = 3;
-    person_current_id = 1.0;
+    person_current_id = 1;
     seats_taken = 0;
 
     event_schedule(simulation_duration, SIMULATION_END);
@@ -132,15 +132,15 @@ void arrive_person(int current_location) {
         destination = 3;
     }
 
-    fprintf(log_file, "Penumpang %.0f mulai di lokasi %d, ingin ke lokasi %d pada %.0f.\n", person_current_id, current_location, destination, sim_time);
+    fprintf(log_file, "Penumpang <id:%d, src:%d, dest:%d> tiba di sistem pada %.0f.\n", person_current_id, current_location, destination, sim_time);
 
     transfer[1] = sim_time;
-    transfer[2] = destination;
-    transfer[3] = person_current_id;
-    transfer[4] = current_location;
+    transfer[4] = (double) destination;
+    transfer[2] = (double) person_current_id;
+    transfer[3] = (double) current_location;
     list_file(LAST, current_location);
 
-    person_current_id += 1.0;
+    person_current_id++;
     double next_arrival = sim_time + expon(mean_interarrival[current_location], current_location);
     event_schedule(next_arrival, current_location);
 
@@ -175,7 +175,6 @@ void depart_bus() {
     double arrival_time = sim_time + travel_time[bus_current_location];
     event_schedule(arrival_time, BUS_ARRIVE);
     bus_moving = 1;
-
 }
 
 void arrive_bus() {
@@ -202,10 +201,10 @@ double unload_bus() {
         unload_time += uniform(16.0, 24.0, STREAM_LOAD_BUS);
 
         list_remove(FIRST, bus_current_location + 3);
-        fprintf(log_file, "Penumpang %.0f turun pada %.0f\n", transfer[3], sim_time + unload_time);
+        fprintf(log_file, "Penumpang <id:%d, src:%d, dest:%d> turun dari bus pada %.0f\n", (int)transfer[2], (int)transfer[3], (int)transfer[4], sim_time + unload_time);
 
         double person_system_duration = sim_time - transfer[1];
-        sampst(person_system_duration, transfer[4] + 6);
+        sampst(person_system_duration, transfer[3] + 6);
 
         seats_taken--;
         timest((double) seats_taken, 1);
@@ -226,12 +225,12 @@ double load_bus(double unload_time) {
         delta_time = unload_time + load_time;
 
         list_remove(FIRST, bus_current_location);
-        fprintf(log_file, "Penumpang %.0f naik pada %.0f.\n", transfer[3], sim_time + delta_time);
+        fprintf(log_file, "Penumpang <id:%d, src:%d, dest:%d> naik bus pada %.0f.\n", (int)transfer[2], (int)transfer[3], (int)transfer[4], sim_time + delta_time);
 
         delay = sim_time + delta_time - transfer[1];
         sampst(delay, bus_current_location);
 
-        list_file(LAST, transfer[2] + 3);
+        list_file(LAST, transfer[4] + 3);
         seats_taken++;
         timest((double) seats_taken, 1);
 

@@ -1,0 +1,58 @@
+a. Jumlah penumpang dalam setiap antrian:
+	Antrian 1:
+		Rata-rata: 3
+		Maksimum: 11
+	Antrian 2:
+		Rata-rata: 2
+		Maksimum: 7
+	Antrian 3:
+		Rata-rata: 5
+		Maksimum: 15
+
+b. Delay dalam setiap antrian:
+	Antrian 1:
+		Rata-rata: 1027.30
+		Maksimum: 2291.24
+	Antrian 2:
+		Rata-rata: 968.92
+		Maksimum: 2079.75
+	Antrian 3:
+		Rata-rata: 1064.56
+		Maksimum: 2225.52
+
+c. Jumlah penumpang dalam bus:
+	Rata-rata: 14
+	Maksimum: 20
+
+d. Durasi bus berada di setiap lokasi:
+	Antrian 1:
+		Rata-rata: 292.59
+		Maksimum: 400.57
+		Minimum: 217.13
+	Antrian 2:
+		Rata-rata: 294.10
+		Maksimum: 322.25
+		Minimum: 226.26
+	Antrian 3:
+		Rata-rata: 303.31
+		Maksimum: 319.87
+		Minimum: 300.00
+
+e. Waktu tempuh bus untuk melakukan satu keliling:
+	Rata-rata: 2088
+	Maksimum: 2211
+	Minimum: 1953
+
+f. Durasi penumpang berada di sistem:
+	Penumpang dari antrian 1:
+		Rata-rata: 2059.60
+		Maksimum: 3463.20
+		Minimum: 981.80
+	Penumpang dari antrian 2:
+		Rata-rata: 1603.78
+		Maksimum: 2738.68
+		Minimum: 559.85
+	Penumpang dari antrian 3:
+		Rata-rata: 1712.45
+		Maksimum: 3043.46
+		Minimum: 579.92

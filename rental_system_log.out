@@ -1,0 +1,639 @@
+Bus berangkat dari lokasi 3 pada 0.
+Penumpang <id:1, src:3, dest:1> tiba di sistem pada 78.
+Penumpang <id:2, src:3, dest:1> tiba di sistem pada 203.
+Penumpang <id:3, src:1, dest:3> tiba di sistem pada 235.
+Penumpang <id:4, src:3, dest:1> tiba di sistem pada 291.
+Penumpang <id:5, src:1, dest:3> tiba di sistem pada 361.
+Penumpang <id:6, src:3, dest:1> tiba di sistem pada 363.
+Penumpang <id:7, src:3, dest:2> tiba di sistem pada 402.
+Penumpang <id:8, src:3, dest:1> tiba di sistem pada 480.
+Bus tiba di lokasi 1 pada 540.
+Penumpang <id:3, src:1, dest:3> naik bus pada 560.
+Penumpang <id:5, src:1, dest:3> naik bus pada 585.
+Penumpang <id:9, src:1, dest:3> tiba di sistem pada 575.
+Penumpang <id:9, src:1, dest:3> naik bus pada 600.
+Penumpang <id:10, src:2, dest:3> tiba di sistem pada 600.
+Penumpang <id:11, src:1, dest:3> tiba di sistem pada 822.
+Penumpang <id:11, src:1, dest:3> naik bus pada 844.
+Bus berangkat dari lokasi 1 pada 844.
+Penumpang <id:12, src:3, dest:1> tiba di sistem pada 956.
+Bus tiba di lokasi 2 pada 964.
+Penumpang <id:10, src:2, dest:3> naik bus pada 988.
+Penumpang <id:13, src:1, dest:3> tiba di sistem pada 997.
+Penumpang <id:14, src:3, dest:2> tiba di sistem pada 1042.
+Penumpang <id:15, src:1, dest:3> tiba di sistem pada 1085.
+Penumpang <id:16, src:2, dest:3> tiba di sistem pada 1086.
+Penumpang <id:16, src:2, dest:3> naik bus pada 1101.
+Bus berangkat dari lokasi 2 pada 1264.
+Penumpang <id:17, src:2, dest:3> tiba di sistem pada 1283.
+Penumpang <id:18, src:3, dest:1> tiba di sistem pada 1323.
+Penumpang <id:19, src:3, dest:2> tiba di sistem pada 1378.
+Penumpang <id:20, src:2, dest:3> tiba di sistem pada 1441.
+Penumpang <id:21, src:3, dest:1> tiba di sistem pada 1515.
+Penumpang <id:22, src:1, dest:3> tiba di sistem pada 1519.
+Penumpang <id:23, src:3, dest:2> tiba di sistem pada 1555.
+Penumpang <id:24, src:1, dest:3> tiba di sistem pada 1566.
+Penumpang <id:25, src:3, dest:1> tiba di sistem pada 1632.
+Penumpang <id:26, src:1, dest:3> tiba di sistem pada 1678.
+Penumpang <id:27, src:3, dest:2> tiba di sistem pada 1737.
+Penumpang <id:28, src:3, dest:2> tiba di sistem pada 1765.
+Bus tiba di lokasi 3 pada 1804.
+Penumpang <id:3, src:1, dest:3> turun dari bus pada 1822
+Penumpang <id:5, src:1, dest:3> turun dari bus pada 1841
+Penumpang <id:9, src:1, dest:3> turun dari bus pada 1859
+Penumpang <id:11, src:1, dest:3> turun dari bus pada 1877
+Penumpang <id:10, src:2, dest:3> turun dari bus pada 1901
+Penumpang <id:16, src:2, dest:3> turun dari bus pada 1921
+Penumpang <id:1, src:3, dest:1> naik bus pada 1945.
+Penumpang <id:2, src:3, dest:1> naik bus pada 1966.
+Penumpang <id:4, src:3, dest:1> naik bus pada 1983.
+Penumpang <id:6, src:3, dest:1> naik bus pada 2003.
+Penumpang <id:7, src:3, dest:2> naik bus pada 2021.
+Penumpang <id:8, src:3, dest:1> naik bus pada 2037.
+Penumpang <id:12, src:3, dest:1> naik bus pada 2055.
+Penumpang <id:14, src:3, dest:2> naik bus pada 2073.
+Penumpang <id:18, src:3, dest:1> naik bus pada 2097.
+Penumpang <id:19, src:3, dest:2> naik bus pada 2120.
+Penumpang <id:21, src:3, dest:1> naik bus pada 2142.
+Penumpang <id:23, src:3, dest:2> naik bus pada 2159.
+Penumpang <id:25, src:3, dest:1> naik bus pada 2179.
+Penumpang <id:27, src:3, dest:2> naik bus pada 2203.
+Penumpang <id:28, src:3, dest:2> naik bus pada 2225.
+Penumpang <id:29, src:3, dest:2> tiba di sistem pada 1897.
+Penumpang <id:29, src:3, dest:2> naik bus pada 1912.
+Penumpang <id:30, src:1, dest:3> tiba di sistem pada 1930.
+Penumpang <id:31, src:3, dest:2> tiba di sistem pada 1944.
+Penumpang <id:31, src:3, dest:2> naik bus pada 1961.
+Penumpang <id:32, src:2, dest:3> tiba di sistem pada 1947.
+Penumpang <id:33, src:3, dest:1> tiba di sistem pada 1978.
+Penumpang <id:33, src:3, dest:1> naik bus pada 1996.
+Penumpang <id:34, src:2, dest:3> tiba di sistem pada 2002.
+Penumpang <id:35, src:3, dest:2> tiba di sistem pada 2011.
+Penumpang <id:35, src:3, dest:2> naik bus pada 2030.
+Penumpang <id:36, src:2, dest:3> tiba di sistem pada 2015.
+Penumpang <id:37, src:3, dest:2> tiba di sistem pada 2053.
+Penumpang <id:37, src:3, dest:2> naik bus pada 2077.
+Bus berangkat dari lokasi 3 pada 2104.
+1 Loop selama 2104.
+Penumpang <id:38, src:2, dest:3> tiba di sistem pada 2160.
+Penumpang <id:39, src:1, dest:3> tiba di sistem pada 2201.
+Penumpang <id:40, src:3, dest:2> tiba di sistem pada 2263.
+Penumpang <id:41, src:1, dest:3> tiba di sistem pada 2270.
+Penumpang <id:42, src:3, dest:1> tiba di sistem pada 2336.
+Penumpang <id:43, src:1, dest:3> tiba di sistem pada 2478.
+Penumpang <id:44, src:1, dest:3> tiba di sistem pada 2502.
+Penumpang <id:45, src:3, dest:2> tiba di sistem pada 2562.
+Penumpang <id:46, src:3, dest:2> tiba di sistem pada 2609.
+Penumpang <id:47, src:3, dest:2> tiba di sistem pada 2613.
+Bus tiba di lokasi 1 pada 2644.
+Penumpang <id:1, src:3, dest:1> turun dari bus pada 2665
+Penumpang <id:2, src:3, dest:1> turun dari bus pada 2681
+Penumpang <id:4, src:3, dest:1> turun dari bus pada 2700
+Penumpang <id:6, src:3, dest:1> turun dari bus pada 2716
+Penumpang <id:8, src:3, dest:1> turun dari bus pada 2737
+Penumpang <id:12, src:3, dest:1> turun dari bus pada 2760
+Penumpang <id:18, src:3, dest:1> turun dari bus pada 2780
+Penumpang <id:21, src:3, dest:1> turun dari bus pada 2797
+Penumpang <id:25, src:3, dest:1> turun dari bus pada 2816
+Penumpang <id:33, src:3, dest:1> turun dari bus pada 2833
+Penumpang <id:13, src:1, dest:3> naik bus pada 2849.
+Penumpang <id:15, src:1, dest:3> naik bus pada 2865.
+Penumpang <id:22, src:1, dest:3> naik bus pada 2884.
+Penumpang <id:24, src:1, dest:3> naik bus pada 2906.
+Penumpang <id:26, src:1, dest:3> naik bus pada 2924.
+Penumpang <id:30, src:1, dest:3> naik bus pada 2946.
+Penumpang <id:39, src:1, dest:3> naik bus pada 2967.
+Penumpang <id:41, src:1, dest:3> naik bus pada 2987.
+Penumpang <id:43, src:1, dest:3> naik bus pada 3003.
+Penumpang <id:44, src:1, dest:3> naik bus pada 3025.
+Penumpang <id:48, src:2, dest:3> tiba di sistem pada 2664.
+Penumpang <id:49, src:3, dest:1> tiba di sistem pada 2675.
+Penumpang <id:50, src:1, dest:3> tiba di sistem pada 2694.
+Penumpang <id:51, src:3, dest:1> tiba di sistem pada 2742.
+Penumpang <id:52, src:3, dest:1> tiba di sistem pada 2821.
+Penumpang <id:53, src:3, dest:1> tiba di sistem pada 2856.
+Penumpang <id:54, src:1, dest:3> tiba di sistem pada 2885.
+Penumpang <id:55, src:1, dest:3> tiba di sistem pada 2926.
+Bus berangkat dari lokasi 1 pada 2944.
+Penumpang <id:56, src:1, dest:3> tiba di sistem pada 2982.
+Bus tiba di lokasi 2 pada 3064.
+Penumpang <id:7, src:3, dest:2> turun dari bus pada 3085
+Penumpang <id:14, src:3, dest:2> turun dari bus pada 3103
+Penumpang <id:19, src:3, dest:2> turun dari bus pada 3123
+Penumpang <id:23, src:3, dest:2> turun dari bus pada 3142
+Penumpang <id:27, src:3, dest:2> turun dari bus pada 3164
+Penumpang <id:28, src:3, dest:2> turun dari bus pada 3182
+Penumpang <id:29, src:3, dest:2> turun dari bus pada 3201
+Penumpang <id:31, src:3, dest:2> turun dari bus pada 3218
+Penumpang <id:35, src:3, dest:2> turun dari bus pada 3236
+Penumpang <id:37, src:3, dest:2> turun dari bus pada 3254
+Penumpang <id:17, src:2, dest:3> naik bus pada 3274.
+Penumpang <id:20, src:2, dest:3> naik bus pada 3296.
+Penumpang <id:32, src:2, dest:3> naik bus pada 3315.
+Penumpang <id:34, src:2, dest:3> naik bus pada 3331.
+Penumpang <id:36, src:2, dest:3> naik bus pada 3350.
+Penumpang <id:38, src:2, dest:3> naik bus pada 3366.
+Penumpang <id:48, src:2, dest:3> naik bus pada 3386.
+Penumpang <id:57, src:1, dest:3> tiba di sistem pada 3066.
+Penumpang <id:58, src:1, dest:3> tiba di sistem pada 3157.
+Penumpang <id:59, src:3, dest:1> tiba di sistem pada 3201.
+Penumpang <id:60, src:3, dest:2> tiba di sistem pada 3213.
+Penumpang <id:61, src:2, dest:3> tiba di sistem pada 3366.
+Penumpang <id:61, src:2, dest:3> naik bus pada 3386.
+Bus berangkat dari lokasi 2 pada 3386.
+Penumpang <id:62, src:2, dest:3> tiba di sistem pada 3418.
+Penumpang <id:63, src:1, dest:3> tiba di sistem pada 3484.
+Penumpang <id:64, src:3, dest:1> tiba di sistem pada 3489.
+Penumpang <id:65, src:3, dest:1> tiba di sistem pada 3533.
+Bus tiba di lokasi 3 pada 3926.
+Penumpang <id:13, src:1, dest:3> turun dari bus pada 3943
+Penumpang <id:15, src:1, dest:3> turun dari bus pada 3959
+Penumpang <id:22, src:1, dest:3> turun dari bus pada 3978
+Penumpang <id:24, src:1, dest:3> turun dari bus pada 4002
+Penumpang <id:26, src:1, dest:3> turun dari bus pada 4023
+Penumpang <id:30, src:1, dest:3> turun dari bus pada 4043
+Penumpang <id:39, src:1, dest:3> turun dari bus pada 4063
+Penumpang <id:41, src:1, dest:3> turun dari bus pada 4086
+Penumpang <id:43, src:1, dest:3> turun dari bus pada 4107
+Penumpang <id:44, src:1, dest:3> turun dari bus pada 4128
+Penumpang <id:17, src:2, dest:3> turun dari bus pada 4148
+Penumpang <id:20, src:2, dest:3> turun dari bus pada 4167
+Penumpang <id:32, src:2, dest:3> turun dari bus pada 4187
+Penumpang <id:34, src:2, dest:3> turun dari bus pada 4207
+Penumpang <id:36, src:2, dest:3> turun dari bus pada 4224
+Penumpang <id:38, src:2, dest:3> turun dari bus pada 4244
+Penumpang <id:48, src:2, dest:3> turun dari bus pada 4266
+Penumpang <id:61, src:2, dest:3> turun dari bus pada 4289
+Penumpang <id:40, src:3, dest:2> naik bus pada 4307.
+Penumpang <id:42, src:3, dest:1> naik bus pada 4332.
+Penumpang <id:45, src:3, dest:2> naik bus pada 4351.
+Penumpang <id:46, src:3, dest:2> naik bus pada 4370.
+Penumpang <id:47, src:3, dest:2> naik bus pada 4389.
+Penumpang <id:49, src:3, dest:1> naik bus pada 4406.
+Penumpang <id:51, src:3, dest:1> naik bus pada 4423.
+Penumpang <id:52, src:3, dest:1> naik bus pada 4443.
+Penumpang <id:53, src:3, dest:1> naik bus pada 4463.
+Penumpang <id:59, src:3, dest:1> naik bus pada 4480.
+Penumpang <id:60, src:3, dest:2> naik bus pada 4499.
+Penumpang <id:64, src:3, dest:1> naik bus pada 4521.
+Penumpang <id:65, src:3, dest:1> naik bus pada 4544.
+Penumpang <id:66, src:1, dest:3> tiba di sistem pada 3982.
+Penumpang <id:67, src:3, dest:2> tiba di sistem pada 4015.
+Penumpang <id:67, src:3, dest:2> naik bus pada 4031.
+Penumpang <id:68, src:1, dest:3> tiba di sistem pada 4054.
+Penumpang <id:69, src:3, dest:1> tiba di sistem pada 4079.
+Penumpang <id:69, src:3, dest:1> naik bus pada 4099.
+Penumpang <id:70, src:2, dest:3> tiba di sistem pada 4094.
+Penumpang <id:71, src:3, dest:2> tiba di sistem pada 4119.
+Penumpang <id:71, src:3, dest:2> naik bus pada 4138.
+Penumpang <id:72, src:3, dest:2> tiba di sistem pada 4169.
+Penumpang <id:72, src:3, dest:2> naik bus pada 4189.
+Penumpang <id:73, src:3, dest:2> tiba di sistem pada 4223.
+Penumpang <id:73, src:3, dest:2> naik bus pada 4246.
+Bus berangkat dari lokasi 3 pada 4246.
+1 Loop selama 2142.
+Penumpang <id:74, src:3, dest:1> tiba di sistem pada 4321.
+Penumpang <id:75, src:1, dest:3> tiba di sistem pada 4474.
+Penumpang <id:76, src:3, dest:2> tiba di sistem pada 4478.
+Penumpang <id:77, src:3, dest:1> tiba di sistem pada 4494.
+Penumpang <id:78, src:2, dest:3> tiba di sistem pada 4562.
+Penumpang <id:79, src:2, dest:3> tiba di sistem pada 4613.
+Penumpang <id:80, src:1, dest:3> tiba di sistem pada 4695.
+Penumpang <id:81, src:3, dest:1> tiba di sistem pada 4771.
+Bus tiba di lokasi 1 pada 4786.
+Penumpang <id:42, src:3, dest:1> turun dari bus pada 4806
+Penumpang <id:49, src:3, dest:1> turun dari bus pada 4823
+Penumpang <id:51, src:3, dest:1> turun dari bus pada 4843
+Penumpang <id:52, src:3, dest:1> turun dari bus pada 4864
+Penumpang <id:53, src:3, dest:1> turun dari bus pada 4884
+Penumpang <id:59, src:3, dest:1> turun dari bus pada 4901
+Penumpang <id:64, src:3, dest:1> turun dari bus pada 4924
+Penumpang <id:65, src:3, dest:1> turun dari bus pada 4941
+Penumpang <id:69, src:3, dest:1> turun dari bus pada 4962
+Penumpang <id:50, src:1, dest:3> naik bus pada 4985.
+Penumpang <id:54, src:1, dest:3> naik bus pada 5009.
+Penumpang <id:55, src:1, dest:3> naik bus pada 5029.
+Penumpang <id:56, src:1, dest:3> naik bus pada 5052.
+Penumpang <id:57, src:1, dest:3> naik bus pada 5069.
+Penumpang <id:58, src:1, dest:3> naik bus pada 5085.
+Penumpang <id:63, src:1, dest:3> naik bus pada 5101.
+Penumpang <id:66, src:1, dest:3> naik bus pada 5121.
+Penumpang <id:68, src:1, dest:3> naik bus pada 5144.
+Penumpang <id:75, src:1, dest:3> naik bus pada 5164.
+Penumpang <id:80, src:1, dest:3> naik bus pada 5187.
+Penumpang <id:82, src:2, dest:3> tiba di sistem pada 5088.
+Penumpang <id:83, src:3, dest:2> tiba di sistem pada 5089.
+Penumpang <id:84, src:2, dest:3> tiba di sistem pada 5157.
+Penumpang <id:85, src:2, dest:3> tiba di sistem pada 5175.
+Bus berangkat dari lokasi 1 pada 5187.
+Penumpang <id:86, src:3, dest:2> tiba di sistem pada 5240.
+Bus tiba di lokasi 2 pada 5307.
+Penumpang <id:40, src:3, dest:2> turun dari bus pada 5330
+Penumpang <id:45, src:3, dest:2> turun dari bus pada 5348
+Penumpang <id:46, src:3, dest:2> turun dari bus pada 5366
+Penumpang <id:47, src:3, dest:2> turun dari bus pada 5383
+Penumpang <id:60, src:3, dest:2> turun dari bus pada 5399
+Penumpang <id:67, src:3, dest:2> turun dari bus pada 5422
+Penumpang <id:71, src:3, dest:2> turun dari bus pada 5439
+Penumpang <id:72, src:3, dest:2> turun dari bus pada 5458
+Penumpang <id:73, src:3, dest:2> turun dari bus pada 5477
+Penumpang <id:62, src:2, dest:3> naik bus pada 5498.
+Penumpang <id:70, src:2, dest:3> naik bus pada 5515.
+Penumpang <id:78, src:2, dest:3> naik bus pada 5533.
+Penumpang <id:79, src:2, dest:3> naik bus pada 5554.
+Penumpang <id:82, src:2, dest:3> naik bus pada 5579.
+Penumpang <id:84, src:2, dest:3> naik bus pada 5595.
+Penumpang <id:85, src:2, dest:3> naik bus pada 5614.
+Penumpang <id:87, src:3, dest:1> tiba di sistem pada 5476.
+Penumpang <id:88, src:2, dest:3> tiba di sistem pada 5597.
+Penumpang <id:88, src:2, dest:3> naik bus pada 5617.
+Bus berangkat dari lokasi 2 pada 5617.
+Penumpang <id:89, src:1, dest:3> tiba di sistem pada 5660.
+Penumpang <id:90, src:1, dest:3> tiba di sistem pada 5800.
+Penumpang <id:91, src:3, dest:2> tiba di sistem pada 5800.
+Penumpang <id:92, src:3, dest:2> tiba di sistem pada 5816.
+Penumpang <id:93, src:3, dest:2> tiba di sistem pada 5874.
+Penumpang <id:94, src:3, dest:1> tiba di sistem pada 5979.
+Penumpang <id:95, src:3, dest:2> tiba di sistem pada 5991.
+Penumpang <id:96, src:3, dest:1> tiba di sistem pada 6140.
+Penumpang <id:97, src:3, dest:2> tiba di sistem pada 6146.
+Bus tiba di lokasi 3 pada 6157.
+Penumpang <id:50, src:1, dest:3> turun dari bus pada 6180
+Penumpang <id:54, src:1, dest:3> turun dari bus pada 6203
+Penumpang <id:55, src:1, dest:3> turun dari bus pada 6221
+Penumpang <id:56, src:1, dest:3> turun dari bus pada 6244
+Penumpang <id:57, src:1, dest:3> turun dari bus pada 6264
+Penumpang <id:58, src:1, dest:3> turun dari bus pada 6283
+Penumpang <id:63, src:1, dest:3> turun dari bus pada 6301
+Penumpang <id:66, src:1, dest:3> turun dari bus pada 6322
+Penumpang <id:68, src:1, dest:3> turun dari bus pada 6344
+Penumpang <id:75, src:1, dest:3> turun dari bus pada 6365
+Penumpang <id:80, src:1, dest:3> turun dari bus pada 6382
+Penumpang <id:62, src:2, dest:3> turun dari bus pada 6399
+Penumpang <id:70, src:2, dest:3> turun dari bus pada 6421
+Penumpang <id:78, src:2, dest:3> turun dari bus pada 6441
+Penumpang <id:79, src:2, dest:3> turun dari bus pada 6458
+Penumpang <id:82, src:2, dest:3> turun dari bus pada 6478
+Penumpang <id:84, src:2, dest:3> turun dari bus pada 6495
+Penumpang <id:85, src:2, dest:3> turun dari bus pada 6512
+Penumpang <id:88, src:2, dest:3> turun dari bus pada 6529
+Penumpang <id:74, src:3, dest:1> naik bus pada 6546.
+Penumpang <id:76, src:3, dest:2> naik bus pada 6570.
+Penumpang <id:77, src:3, dest:1> naik bus pada 6594.
+Penumpang <id:81, src:3, dest:1> naik bus pada 6612.
+Penumpang <id:83, src:3, dest:2> naik bus pada 6629.
+Penumpang <id:86, src:3, dest:2> naik bus pada 6647.
+Penumpang <id:87, src:3, dest:1> naik bus pada 6671.
+Penumpang <id:91, src:3, dest:2> naik bus pada 6696.
+Penumpang <id:92, src:3, dest:2> naik bus pada 6718.
+Penumpang <id:93, src:3, dest:2> naik bus pada 6741.
+Penumpang <id:94, src:3, dest:1> naik bus pada 6764.
+Penumpang <id:95, src:3, dest:2> naik bus pada 6779.
+Penumpang <id:96, src:3, dest:1> naik bus pada 6804.
+Penumpang <id:97, src:3, dest:2> naik bus pada 6827.
+Penumpang <id:98, src:3, dest:1> tiba di sistem pada 6216.
+Penumpang <id:98, src:3, dest:1> naik bus pada 6236.
+Penumpang <id:99, src:2, dest:3> tiba di sistem pada 6325.
+Bus berangkat dari lokasi 3 pada 6457.
+1 Loop selama 2211.
+Penumpang <id:100, src:3, dest:2> tiba di sistem pada 6637.
+Penumpang <id:101, src:3, dest:1> tiba di sistem pada 6641.
+Penumpang <id:102, src:1, dest:3> tiba di sistem pada 6655.
+Penumpang <id:103, src:3, dest:2> tiba di sistem pada 6802.
+Penumpang <id:104, src:1, dest:3> tiba di sistem pada 6992.
+Bus tiba di lokasi 1 pada 6997.
+Penumpang <id:74, src:3, dest:1> turun dari bus pada 7019
+Penumpang <id:77, src:3, dest:1> turun dari bus pada 7041
+Penumpang <id:81, src:3, dest:1> turun dari bus pada 7060
+Penumpang <id:87, src:3, dest:1> turun dari bus pada 7081
+Penumpang <id:94, src:3, dest:1> turun dari bus pada 7098
+Penumpang <id:96, src:3, dest:1> turun dari bus pada 7119
+Penumpang <id:98, src:3, dest:1> turun dari bus pada 7139
+Penumpang <id:89, src:1, dest:3> naik bus pada 7159.
+Penumpang <id:90, src:1, dest:3> naik bus pada 7181.
+Penumpang <id:102, src:1, dest:3> naik bus pada 7201.
+Penumpang <id:104, src:1, dest:3> naik bus pada 7223.
+Penumpang <id:105, src:3, dest:1> tiba di sistem pada 7032.
+Penumpang <id:106, src:2, dest:3> tiba di sistem pada 7060.
+Penumpang <id:107, src:2, dest:3> tiba di sistem pada 7152.
+Penumpang <id:108, src:3, dest:1> tiba di sistem pada 7157.
+Bus berangkat dari lokasi 1 pada 7223.
+Penumpang <id:109, src:3, dest:1> tiba di sistem pada 7313.
+Bus tiba di lokasi 2 pada 7343.
+Penumpang <id:76, src:3, dest:2> turun dari bus pada 7365
+Penumpang <id:83, src:3, dest:2> turun dari bus pada 7388
+Penumpang <id:86, src:3, dest:2> turun dari bus pada 7411
+Penumpang <id:91, src:3, dest:2> turun dari bus pada 7434
+Penumpang <id:92, src:3, dest:2> turun dari bus pada 7454
+Penumpang <id:93, src:3, dest:2> turun dari bus pada 7472
+Penumpang <id:95, src:3, dest:2> turun dari bus pada 7489
+Penumpang <id:97, src:3, dest:2> turun dari bus pada 7508
+Penumpang <id:99, src:2, dest:3> naik bus pada 7529.
+Penumpang <id:106, src:2, dest:3> naik bus pada 7554.
+Penumpang <id:107, src:2, dest:3> naik bus pada 7570.
+Penumpang <id:110, src:3, dest:2> tiba di sistem pada 7387.
+Penumpang <id:111, src:3, dest:1> tiba di sistem pada 7393.
+Penumpang <id:112, src:1, dest:3> tiba di sistem pada 7469.
+Penumpang <id:113, src:3, dest:2> tiba di sistem pada 7481.
+Bus berangkat dari lokasi 2 pada 7570.
+Penumpang <id:114, src:2, dest:3> tiba di sistem pada 7572.
+Penumpang <id:115, src:2, dest:3> tiba di sistem pada 7597.
+Penumpang <id:116, src:2, dest:3> tiba di sistem pada 7750.
+Penumpang <id:117, src:3, dest:2> tiba di sistem pada 7916.
+Penumpang <id:118, src:3, dest:2> tiba di sistem pada 7917.
+Penumpang <id:119, src:2, dest:3> tiba di sistem pada 8074.
+Bus tiba di lokasi 3 pada 8110.
+Penumpang <id:89, src:1, dest:3> turun dari bus pada 8129
+Penumpang <id:90, src:1, dest:3> turun dari bus pada 8151
+Penumpang <id:102, src:1, dest:3> turun dari bus pada 8173
+Penumpang <id:104, src:1, dest:3> turun dari bus pada 8191
+Penumpang <id:99, src:2, dest:3> turun dari bus pada 8212
+Penumpang <id:106, src:2, dest:3> turun dari bus pada 8236
+Penumpang <id:107, src:2, dest:3> turun dari bus pada 8259
+Penumpang <id:100, src:3, dest:2> naik bus pada 8283.
+Penumpang <id:101, src:3, dest:1> naik bus pada 8306.
+Penumpang <id:103, src:3, dest:2> naik bus pada 8325.
+Penumpang <id:105, src:3, dest:1> naik bus pada 8346.
+Penumpang <id:108, src:3, dest:1> naik bus pada 8361.
+Penumpang <id:109, src:3, dest:1> naik bus pada 8381.
+Penumpang <id:110, src:3, dest:2> naik bus pada 8403.
+Penumpang <id:111, src:3, dest:1> naik bus pada 8421.
+Penumpang <id:113, src:3, dest:2> naik bus pada 8440.
+Penumpang <id:117, src:3, dest:2> naik bus pada 8464.
+Penumpang <id:118, src:3, dest:2> naik bus pada 8480.
+Penumpang <id:120, src:1, dest:3> tiba di sistem pada 8215.
+Penumpang <id:121, src:3, dest:2> tiba di sistem pada 8227.
+Penumpang <id:121, src:3, dest:2> naik bus pada 8245.
+Penumpang <id:122, src:3, dest:1> tiba di sistem pada 8268.
+Penumpang <id:122, src:3, dest:1> naik bus pada 8291.
+Penumpang <id:123, src:1, dest:3> tiba di sistem pada 8306.
+Penumpang <id:124, src:2, dest:3> tiba di sistem pada 8367.
+Bus berangkat dari lokasi 3 pada 8410.
+1 Loop selama 1953.
+Penumpang <id:125, src:3, dest:1> tiba di sistem pada 8490.
+Penumpang <id:126, src:1, dest:3> tiba di sistem pada 8608.
+Penumpang <id:127, src:3, dest:2> tiba di sistem pada 8742.
+Penumpang <id:128, src:3, dest:2> tiba di sistem pada 8853.
+Penumpang <id:129, src:1, dest:3> tiba di sistem pada 8877.
+Penumpang <id:130, src:3, dest:2> tiba di sistem pada 8894.
+Penumpang <id:131, src:3, dest:2> tiba di sistem pada 8930.
+Bus tiba di lokasi 1 pada 8950.
+Penumpang <id:101, src:3, dest:1> turun dari bus pada 8973
+Penumpang <id:105, src:3, dest:1> turun dari bus pada 8990
+Penumpang <id:108, src:3, dest:1> turun dari bus pada 9008
+Penumpang <id:109, src:3, dest:1> turun dari bus pada 9029
+Penumpang <id:111, src:3, dest:1> turun dari bus pada 9049
+Penumpang <id:122, src:3, dest:1> turun dari bus pada 9071
+Penumpang <id:112, src:1, dest:3> naik bus pada 9090.
+Penumpang <id:120, src:1, dest:3> naik bus pada 9106.
+Penumpang <id:123, src:1, dest:3> naik bus pada 9128.
+Penumpang <id:126, src:1, dest:3> naik bus pada 9149.
+Penumpang <id:129, src:1, dest:3> naik bus pada 9167.
+Penumpang <id:132, src:3, dest:1> tiba di sistem pada 8962.
+Penumpang <id:133, src:3, dest:1> tiba di sistem pada 8977.
+Bus berangkat dari lokasi 1 pada 9167.
+Bus tiba di lokasi 2 pada 9287.
+Penumpang <id:100, src:3, dest:2> turun dari bus pada 9306
+Penumpang <id:103, src:3, dest:2> turun dari bus pada 9322
+Penumpang <id:110, src:3, dest:2> turun dari bus pada 9340
+Penumpang <id:113, src:3, dest:2> turun dari bus pada 9362
+Penumpang <id:117, src:3, dest:2> turun dari bus pada 9382
+Penumpang <id:118, src:3, dest:2> turun dari bus pada 9399
+Penumpang <id:121, src:3, dest:2> turun dari bus pada 9416
+Penumpang <id:114, src:2, dest:3> naik bus pada 9436.
+Penumpang <id:115, src:2, dest:3> naik bus pada 9454.
+Penumpang <id:116, src:2, dest:3> naik bus pada 9478.
+Penumpang <id:119, src:2, dest:3> naik bus pada 9495.
+Penumpang <id:124, src:2, dest:3> naik bus pada 9519.
+Penumpang <id:134, src:1, dest:3> tiba di sistem pada 9292.
+Penumpang <id:135, src:3, dest:1> tiba di sistem pada 9372.
+Penumpang <id:136, src:2, dest:3> tiba di sistem pada 9375.
+Penumpang <id:136, src:2, dest:3> naik bus pada 9396.
+Penumpang <id:137, src:1, dest:3> tiba di sistem pada 9473.
+Penumpang <id:138, src:2, dest:3> tiba di sistem pada 9540.
+Penumpang <id:138, src:2, dest:3> naik bus pada 9563.
+Bus berangkat dari lokasi 2 pada 9587.
+Penumpang <id:139, src:3, dest:2> tiba di sistem pada 9610.
+Penumpang <id:140, src:3, dest:1> tiba di sistem pada 9673.
+Penumpang <id:141, src:1, dest:3> tiba di sistem pada 9694.
+Penumpang <id:142, src:1, dest:3> tiba di sistem pada 9921.
+Penumpang <id:143, src:2, dest:3> tiba di sistem pada 9938.
+Penumpang <id:144, src:3, dest:1> tiba di sistem pada 9974.
+Penumpang <id:145, src:3, dest:1> tiba di sistem pada 10028.
+Penumpang <id:146, src:3, dest:1> tiba di sistem pada 10047.
+Penumpang <id:147, src:3, dest:2> tiba di sistem pada 10073.
+Bus tiba di lokasi 3 pada 10127.
+Penumpang <id:112, src:1, dest:3> turun dari bus pada 10148
+Penumpang <id:120, src:1, dest:3> turun dari bus pada 10167
+Penumpang <id:123, src:1, dest:3> turun dari bus pada 10189
+Penumpang <id:126, src:1, dest:3> turun dari bus pada 10210
+Penumpang <id:129, src:1, dest:3> turun dari bus pada 10228
+Penumpang <id:114, src:2, dest:3> turun dari bus pada 10250
+Penumpang <id:115, src:2, dest:3> turun dari bus pada 10268
+Penumpang <id:116, src:2, dest:3> turun dari bus pada 10291
+Penumpang <id:119, src:2, dest:3> turun dari bus pada 10314
+Penumpang <id:124, src:2, dest:3> turun dari bus pada 10335
+Penumpang <id:136, src:2, dest:3> turun dari bus pada 10353
+Penumpang <id:138, src:2, dest:3> turun dari bus pada 10373
+Penumpang <id:125, src:3, dest:1> naik bus pada 10390.
+Penumpang <id:127, src:3, dest:2> naik bus pada 10407.
+Penumpang <id:128, src:3, dest:2> naik bus pada 10431.
+Penumpang <id:130, src:3, dest:2> naik bus pada 10446.
+Penumpang <id:131, src:3, dest:2> naik bus pada 10470.
+Penumpang <id:132, src:3, dest:1> naik bus pada 10493.
+Penumpang <id:133, src:3, dest:1> naik bus pada 10509.
+Penumpang <id:135, src:3, dest:1> naik bus pada 10526.
+Penumpang <id:139, src:3, dest:2> naik bus pada 10550.
+Penumpang <id:140, src:3, dest:1> naik bus pada 10572.
+Penumpang <id:144, src:3, dest:1> naik bus pada 10594.
+Penumpang <id:145, src:3, dest:1> naik bus pada 10618.
+Penumpang <id:146, src:3, dest:1> naik bus pada 10636.
+Penumpang <id:147, src:3, dest:2> naik bus pada 10654.
+Penumpang <id:148, src:2, dest:3> tiba di sistem pada 10132.
+Penumpang <id:149, src:3, dest:1> tiba di sistem pada 10333.
+Penumpang <id:149, src:3, dest:1> naik bus pada 10352.
+Penumpang <id:150, src:2, dest:3> tiba di sistem pada 10361.
+Bus berangkat dari lokasi 3 pada 10427.
+1 Loop selama 2017.
+Penumpang <id:151, src:3, dest:1> tiba di sistem pada 10756.
+Penumpang <id:152, src:3, dest:1> tiba di sistem pada 10783.
+Penumpang <id:153, src:1, dest:3> tiba di sistem pada 10933.
+Bus tiba di lokasi 1 pada 10967.
+Penumpang <id:125, src:3, dest:1> turun dari bus pada 10988
+Penumpang <id:132, src:3, dest:1> turun dari bus pada 11009
+Penumpang <id:133, src:3, dest:1> turun dari bus pada 11029
+Penumpang <id:135, src:3, dest:1> turun dari bus pada 11050
+Penumpang <id:140, src:3, dest:1> turun dari bus pada 11068
+Penumpang <id:144, src:3, dest:1> turun dari bus pada 11085
+Penumpang <id:145, src:3, dest:1> turun dari bus pada 11107
+Penumpang <id:146, src:3, dest:1> turun dari bus pada 11127
+Penumpang <id:149, src:3, dest:1> turun dari bus pada 11149
+Penumpang <id:134, src:1, dest:3> naik bus pada 11167.
+Penumpang <id:137, src:1, dest:3> naik bus pada 11188.
+Penumpang <id:141, src:1, dest:3> naik bus pada 11208.
+Penumpang <id:142, src:1, dest:3> naik bus pada 11232.
+Penumpang <id:153, src:1, dest:3> naik bus pada 11249.
+Penumpang <id:154, src:3, dest:1> tiba di sistem pada 10988.
+Penumpang <id:155, src:3, dest:1> tiba di sistem pada 11027.
+Penumpang <id:156, src:1, dest:3> tiba di sistem pada 11042.
+Penumpang <id:156, src:1, dest:3> naik bus pada 11061.
+Penumpang <id:157, src:1, dest:3> tiba di sistem pada 11043.
+Penumpang <id:157, src:1, dest:3> naik bus pada 11065.
+Penumpang <id:158, src:1, dest:3> tiba di sistem pada 11086.
+Penumpang <id:158, src:1, dest:3> naik bus pada 11102.
+Penumpang <id:159, src:1, dest:3> tiba di sistem pada 11113.
+Penumpang <id:159, src:1, dest:3> naik bus pada 11135.
+Penumpang <id:160, src:1, dest:3> tiba di sistem pada 11150.
+Penumpang <id:160, src:1, dest:3> naik bus pada 11166.
+Bus berangkat dari lokasi 1 pada 11267.
+Penumpang <id:161, src:1, dest:3> tiba di sistem pada 11328.
+Penumpang <id:162, src:3, dest:2> tiba di sistem pada 11336.
+Penumpang <id:163, src:1, dest:3> tiba di sistem pada 11369.
+Bus tiba di lokasi 2 pada 11387.
+Penumpang <id:127, src:3, dest:2> turun dari bus pada 11409
+Penumpang <id:128, src:3, dest:2> turun dari bus pada 11429
+Penumpang <id:130, src:3, dest:2> turun dari bus pada 11453
+Penumpang <id:131, src:3, dest:2> turun dari bus pada 11474
+Penumpang <id:139, src:3, dest:2> turun dari bus pada 11498
+Penumpang <id:147, src:3, dest:2> turun dari bus pada 11518
+Penumpang <id:143, src:2, dest:3> naik bus pada 11542.
+Penumpang <id:148, src:2, dest:3> naik bus pada 11561.
+Penumpang <id:150, src:2, dest:3> naik bus pada 11584.
+Penumpang <id:164, src:2, dest:3> tiba di sistem pada 11400.
+Penumpang <id:164, src:2, dest:3> naik bus pada 11418.
+Penumpang <id:165, src:1, dest:3> tiba di sistem pada 11477.
+Penumpang <id:166, src:1, dest:3> tiba di sistem pada 11514.
+Penumpang <id:167, src:3, dest:1> tiba di sistem pada 11541.
+Bus berangkat dari lokasi 2 pada 11687.
+Penumpang <id:168, src:2, dest:3> tiba di sistem pada 11713.
+Penumpang <id:169, src:3, dest:2> tiba di sistem pada 11813.
+Penumpang <id:170, src:1, dest:3> tiba di sistem pada 11816.
+Penumpang <id:171, src:2, dest:3> tiba di sistem pada 11868.
+Penumpang <id:172, src:3, dest:2> tiba di sistem pada 11981.
+Penumpang <id:173, src:2, dest:3> tiba di sistem pada 12011.
+Penumpang <id:174, src:3, dest:2> tiba di sistem pada 12017.
+Penumpang <id:175, src:3, dest:1> tiba di sistem pada 12101.
+Penumpang <id:176, src:3, dest:2> tiba di sistem pada 12141.
+Bus tiba di lokasi 3 pada 12227.
+Penumpang <id:134, src:1, dest:3> turun dari bus pada 12250
+Penumpang <id:137, src:1, dest:3> turun dari bus pada 12269
+Penumpang <id:141, src:1, dest:3> turun dari bus pada 12289
+Penumpang <id:142, src:1, dest:3> turun dari bus pada 12311
+Penumpang <id:153, src:1, dest:3> turun dari bus pada 12331
+Penumpang <id:156, src:1, dest:3> turun dari bus pada 12354
+Penumpang <id:157, src:1, dest:3> turun dari bus pada 12377
+Penumpang <id:158, src:1, dest:3> turun dari bus pada 12398
+Penumpang <id:159, src:1, dest:3> turun dari bus pada 12417
+Penumpang <id:160, src:1, dest:3> turun dari bus pada 12434
+Penumpang <id:143, src:2, dest:3> turun dari bus pada 12451
+Penumpang <id:148, src:2, dest:3> turun dari bus pada 12473
+Penumpang <id:150, src:2, dest:3> turun dari bus pada 12493
+Penumpang <id:164, src:2, dest:3> turun dari bus pada 12513
+Penumpang <id:151, src:3, dest:1> naik bus pada 12534.
+Penumpang <id:152, src:3, dest:1> naik bus pada 12558.
+Penumpang <id:154, src:3, dest:1> naik bus pada 12577.
+Penumpang <id:155, src:3, dest:1> naik bus pada 12596.
+Penumpang <id:162, src:3, dest:2> naik bus pada 12617.
+Penumpang <id:167, src:3, dest:1> naik bus pada 12641.
+Penumpang <id:169, src:3, dest:2> naik bus pada 12665.
+Penumpang <id:172, src:3, dest:2> naik bus pada 12687.
+Penumpang <id:174, src:3, dest:2> naik bus pada 12704.
+Penumpang <id:175, src:3, dest:1> naik bus pada 12722.
+Penumpang <id:176, src:3, dest:2> naik bus pada 12740.
+Penumpang <id:177, src:3, dest:1> tiba di sistem pada 12303.
+Penumpang <id:177, src:3, dest:1> naik bus pada 12319.
+Penumpang <id:178, src:2, dest:3> tiba di sistem pada 12336.
+Penumpang <id:179, src:3, dest:1> tiba di sistem pada 12487.
+Penumpang <id:179, src:3, dest:1> naik bus pada 12505.
+Bus berangkat dari lokasi 3 pada 12527.
+1 Loop selama 2100.
+Penumpang <id:180, src:1, dest:3> tiba di sistem pada 12529.
+Penumpang <id:181, src:1, dest:3> tiba di sistem pada 12539.
+Penumpang <id:182, src:1, dest:3> tiba di sistem pada 12567.
+Penumpang <id:183, src:3, dest:2> tiba di sistem pada 12689.
+Penumpang <id:184, src:1, dest:3> tiba di sistem pada 12715.
+Penumpang <id:185, src:2, dest:3> tiba di sistem pada 12838.
+Penumpang <id:186, src:3, dest:1> tiba di sistem pada 12862.
+Penumpang <id:187, src:1, dest:3> tiba di sistem pada 12938.
+Bus tiba di lokasi 1 pada 13067.
+Penumpang <id:151, src:3, dest:1> turun dari bus pada 13088
+Penumpang <id:152, src:3, dest:1> turun dari bus pada 13109
+Penumpang <id:154, src:3, dest:1> turun dari bus pada 13127
+Penumpang <id:155, src:3, dest:1> turun dari bus pada 13144
+Penumpang <id:167, src:3, dest:1> turun dari bus pada 13161
+Penumpang <id:175, src:3, dest:1> turun dari bus pada 13178
+Penumpang <id:177, src:3, dest:1> turun dari bus pada 13200
+Penumpang <id:179, src:3, dest:1> turun dari bus pada 13220
+Penumpang <id:161, src:1, dest:3> naik bus pada 13242.
+Penumpang <id:163, src:1, dest:3> naik bus pada 13259.
+Penumpang <id:165, src:1, dest:3> naik bus pada 13283.
+Penumpang <id:166, src:1, dest:3> naik bus pada 13307.
+Penumpang <id:170, src:1, dest:3> naik bus pada 13323.
+Penumpang <id:180, src:1, dest:3> naik bus pada 13343.
+Penumpang <id:181, src:1, dest:3> naik bus pada 13366.
+Penumpang <id:182, src:1, dest:3> naik bus pada 13390.
+Penumpang <id:184, src:1, dest:3> naik bus pada 13408.
+Penumpang <id:187, src:1, dest:3> naik bus pada 13430.
+Penumpang <id:188, src:3, dest:1> tiba di sistem pada 13095.
+Penumpang <id:189, src:1, dest:3> tiba di sistem pada 13116.
+Penumpang <id:189, src:1, dest:3> naik bus pada 13139.
+Penumpang <id:190, src:3, dest:1> tiba di sistem pada 13177.
+Penumpang <id:191, src:2, dest:3> tiba di sistem pada 13328.
+Bus berangkat dari lokasi 1 pada 13367.
+Penumpang <id:192, src:2, dest:3> tiba di sistem pada 13374.
+Penumpang <id:193, src:3, dest:1> tiba di sistem pada 13437.
+Bus tiba di lokasi 2 pada 13487.
+Penumpang <id:162, src:3, dest:2> turun dari bus pada 13506
+Penumpang <id:169, src:3, dest:2> turun dari bus pada 13528
+Penumpang <id:172, src:3, dest:2> turun dari bus pada 13551
+Penumpang <id:174, src:3, dest:2> turun dari bus pada 13570
+Penumpang <id:176, src:3, dest:2> turun dari bus pada 13588
+Penumpang <id:168, src:2, dest:3> naik bus pada 13608.
+Penumpang <id:171, src:2, dest:3> naik bus pada 13631.
+Penumpang <id:173, src:2, dest:3> naik bus pada 13646.
+Penumpang <id:178, src:2, dest:3> naik bus pada 13668.
+Penumpang <id:185, src:2, dest:3> naik bus pada 13686.
+Penumpang <id:191, src:2, dest:3> naik bus pada 13704.
+Penumpang <id:192, src:2, dest:3> naik bus pada 13727.
+Penumpang <id:194, src:2, dest:3> tiba di sistem pada 13512.
+Penumpang <id:194, src:2, dest:3> naik bus pada 13535.
+Penumpang <id:195, src:1, dest:3> tiba di sistem pada 13651.
+Penumpang <id:196, src:1, dest:3> tiba di sistem pada 13659.
+Penumpang <id:197, src:2, dest:3> tiba di sistem pada 13687.
+Penumpang <id:197, src:2, dest:3> naik bus pada 13702.
+Bus berangkat dari lokasi 2 pada 13787.
+Penumpang <id:198, src:2, dest:3> tiba di sistem pada 13946.
+Penumpang <id:199, src:1, dest:3> tiba di sistem pada 13946.
+Penumpang <id:200, src:3, dest:1> tiba di sistem pada 14013.
+Penumpang <id:201, src:3, dest:1> tiba di sistem pada 14071.
+Penumpang <id:202, src:1, dest:3> tiba di sistem pada 14083.
+Penumpang <id:203, src:2, dest:3> tiba di sistem pada 14116.
+Bus tiba di lokasi 3 pada 14327.
+Penumpang <id:161, src:1, dest:3> turun dari bus pada 14348
+Penumpang <id:163, src:1, dest:3> turun dari bus pada 14369
+Penumpang <id:165, src:1, dest:3> turun dari bus pada 14385
+Penumpang <id:166, src:1, dest:3> turun dari bus pada 14407
+Penumpang <id:170, src:1, dest:3> turun dari bus pada 14428
+Penumpang <id:180, src:1, dest:3> turun dari bus pada 14451
+Penumpang <id:181, src:1, dest:3> turun dari bus pada 14474
+Penumpang <id:182, src:1, dest:3> turun dari bus pada 14497
+Penumpang <id:184, src:1, dest:3> turun dari bus pada 14518
+Penumpang <id:187, src:1, dest:3> turun dari bus pada 14538
+Penumpang <id:189, src:1, dest:3> turun dari bus pada 14555
+Penumpang <id:168, src:2, dest:3> turun dari bus pada 14571
+Penumpang <id:171, src:2, dest:3> turun dari bus pada 14592
+Penumpang <id:173, src:2, dest:3> turun dari bus pada 14614
+Penumpang <id:178, src:2, dest:3> turun dari bus pada 14634
+Penumpang <id:185, src:2, dest:3> turun dari bus pada 14654
+Penumpang <id:191, src:2, dest:3> turun dari bus pada 14674
+Penumpang <id:192, src:2, dest:3> turun dari bus pada 14695
+Penumpang <id:194, src:2, dest:3> turun dari bus pada 14717
+Penumpang <id:197, src:2, dest:3> turun dari bus pada 14740
+Penumpang <id:183, src:3, dest:2> naik bus pada 14756.
+Penumpang <id:186, src:3, dest:1> naik bus pada 14778.
+Penumpang <id:188, src:3, dest:1> naik bus pada 14795.
+Penumpang <id:190, src:3, dest:1> naik bus pada 14818.
+Penumpang <id:193, src:3, dest:1> naik bus pada 14838.
+Penumpang <id:200, src:3, dest:1> naik bus pada 14858.
+Penumpang <id:201, src:3, dest:1> naik bus pada 14875.
+Penumpang <id:204, src:2, dest:3> tiba di sistem pada 14352.
