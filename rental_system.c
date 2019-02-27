@@ -1,51 +1,60 @@
 #include "simlib.h"
 
 // DEFINISI KONSTANTA
-// Konstanta untuk event kedatangan penumpang
-#define PERSON_ARRIVE_1     1   // di antrian 1
-#define PERSON_ARRIVE_2     2   // di antrian 2
-#define PERSON_ARRIVE_3     3   // di antrian 3
 
-// Konstanta untuk event kedatangan dan kepergian bus
-#define BUS_ARRIVE          4
-#define BUS_DEPART          5
+// Konstanta untuk EVENT
+// Event kedatangan penumpang
+#define PERSON_ARRIVE_1 1 // di antrian 1
+#define PERSON_ARRIVE_2 2 // di antrian 2
+#define PERSON_ARRIVE_3 3 // di antrian 3
 
-// Konstanta untuk event simulasi berakhir
-#define SIMULATION_END      6
+// Event kedatangan dan kepergian bus
+#define BUS_ARRIVE 4
+#define BUS_DEPART 5
 
-// Konstanta untuk number generator stream
+// Event kedatangan dan kepergian bus
+#define BUS_UNLOAD 6
+#define BUS_LOAD 7
+
+// Event simulasi berakhir
+#define SIMULATION_END 8
+
+// Konstanta untuk STREAM
 // Stream untuk generate interarrival time pada setiap antrian
-#define STREAM_QUEUE_1      1   // di antrian 1
-#define STREAM_QUEUE_2      2   // di antrian 2
-#define STREAM_QUEUE_3      3   // di antrian 3
+#define STREAM_QUEUE_1 1 // di antrian 1
+#define STREAM_QUEUE_2 2 // di antrian 2
+#define STREAM_QUEUE_3 3 // di antrian 3
 
 // Stream untuk generate waktu unload dan load pada bus
-#define STREAM_UNLOAD_BUS   4
-#define STREAM_LOAD_BUS     5
+#define STREAM_UNLOAD_BUS 4
+#define STREAM_LOAD_BUS 5
 
 // Stream untuk generate pilihan terminal tujuan (terminal 1 atau 2)
-#define STREAM_PICK_DEST    6
+#define STREAM_PICK_DEST 6
+
+// Konstanta lain
+#define WAITING_TIME 300.0 // Waktu minimal yang dihabiskan bus di setiap lokasi
 
 // Deklarasi function
-void arrive_person(int);        // Menangani event PERSON_ARRIVE
-void depart_bus(void);          // Menangani event BUS_DEPART
-void arrive_bus(void);          // Menangani event BUS_ARRIVE
-double unload_bus(void);        // Menangani proses menurunkan penumpang dari bus
-double load_bus(double);        // Menangani proses menaikkan penumpang ke bus
-void report(void);              // Menampilkan statistik hasil simulasi
+void arrive_person(int); // Menangani event PERSON_ARRIVE
+void depart_bus(void);   // Menangani event BUS_DEPART
+void arrive_bus(void);   // Menangani event BUS_ARRIVE
+void unload_bus(void);   // Menangani proses menurunkan penumpang dari bus
+void load_bus(void);     // Menangani proses menaikkan penumpang ke bus
+void report(void);       // Menampilkan statistik hasil simulasi
 
 // Deklarasi variabel global
-int bus_current_location;       // Menyimpan posisi bus terkini
-int seats_taken;                // Menyimpan jumlah kursi bus yang terisi
-int bus_do_loop;                // Menandakan apakah bus sudah mulai berkeliling
-int bus_moving;                 // Menandakan apakah bus sedang bergerak atau diam
+int bus_current_location; // Menyimpan posisi bus terkini
+int seats_taken;          // Menyimpan jumlah kursi bus yang terisi
+int bus_do_loop;          // Menandakan apakah bus sudah mulai berkeliling
+int bus_moving;           // Menandakan apakah bus sedang bergerak atau diam
 int person_current_id;
 
-double mean_interarrival[4];    // Menyimpan rerata antar kedatangan pada setiap lokasi
-double travel_time[4];          // Menyimpan waktu tempuh antar lokasi
-double probability[3];          // Menyimpan peluang terpilihnya terminal 1 dan 2
-double bus_stop_time;           // Menyimpan waktu bus tiba pada suatu lokasi
-double loop_start_time;         // Menyimpan waktu bus memulai keliling
+double mean_interarrival[4]; // Menyimpan rerata antar kedatangan pada setiap lokasi
+double travel_time[4];       // Menyimpan waktu tempuh antar lokasi
+double probability[3];       // Menyimpan peluang terpilihnya terminal 1 dan 2
+double bus_stop_time;        // Menyimpan waktu bus tiba pada suatu lokasi
+double loop_start_time;      // Menyimpan waktu bus memulai keliling
 
 FILE *log_file, *stat_file;
 
@@ -64,7 +73,7 @@ int main() {
     probability[1] = 0.583;
     probability[2] = 1.0;
 
-    double simulation_duration = 3600 * 4;
+    double simulation_duration = 3600 * 80;
 
     init_simlib();
     maxatr = 4;
@@ -93,26 +102,32 @@ int main() {
     do {
         timing();
         switch (next_event_type) {
-            case PERSON_ARRIVE_1:
-                arrive_person(1);
-                break;
-            case PERSON_ARRIVE_2:
-                arrive_person(2);
-                break;
-            case PERSON_ARRIVE_3:
-                arrive_person(3);
-                break;
-            case BUS_ARRIVE:
-                arrive_bus();
-                break;
-            case BUS_DEPART:
-                depart_bus();
-                break;
-            case SIMULATION_END:
-                report();
-                break;
-            default:
-                break;
+        case PERSON_ARRIVE_1:
+            arrive_person(1);
+            break;
+        case PERSON_ARRIVE_2:
+            arrive_person(2);
+            break;
+        case PERSON_ARRIVE_3:
+            arrive_person(3);
+            break;
+        case BUS_ARRIVE:
+            arrive_bus();
+            break;
+        case BUS_DEPART:
+            depart_bus();
+            break;
+        case BUS_UNLOAD:
+            unload_bus();
+            break;
+        case BUS_LOAD:
+            load_bus();
+            break;
+        case SIMULATION_END:
+            report();
+            break;
+        default:
+            break;
         }
     } while (next_event_type != SIMULATION_END);
 
@@ -132,7 +147,7 @@ void arrive_person(int current_location) {
         destination = 3;
     }
 
-    fprintf(log_file, "Penumpang <id:%d, src:%d, dest:%d> tiba di sistem pada %.0f.\n", person_current_id, current_location, destination, sim_time);
+    fprintf(log_file, "Penumpang <id:%d, src:%d, dest:%d> tiba di sistem pada detik %.0f.\n", person_current_id, current_location, destination, sim_time);
 
     transfer[1] = sim_time;
     transfer[4] = (double) destination;
@@ -145,21 +160,15 @@ void arrive_person(int current_location) {
     event_schedule(next_arrival, current_location);
 
     if (bus_current_location == current_location && !bus_moving) {
-        double load_time = load_bus(0.0);
-        double delta_time = sim_time + load_time - bus_stop_time;
-        if (delta_time < 60 * 5) {
-            event_cancel(BUS_DEPART);
-            event_schedule(bus_stop_time + 60 * 5, BUS_DEPART);
-        }
+        event_schedule(sim_time, BUS_LOAD);
     }
 }
 
 void depart_bus() {
     int next_stop = (bus_current_location % 3) + 1;
-    fprintf(log_file, "Bus berangkat dari lokasi %d pada %.0f.\n", bus_current_location, sim_time);
+    fprintf(log_file, "Bus berangkat dari lokasi %d pada detik %.0f.\n", bus_current_location, sim_time);
 
-    if (bus_current_location == 3 && bus_do_loop)
-    {
+    if (bus_current_location == 3 && bus_do_loop) {
         double delta_time = sim_time - loop_start_time;
         loop_start_time = sim_time;
         sampst(delta_time, 10);
@@ -183,61 +192,57 @@ void arrive_bus() {
 
     int departure_location = bus_current_location;
     bus_current_location = (bus_current_location % 3) + 1;
-    fprintf(log_file, "Bus tiba di lokasi %d pada %.0f.\n", bus_current_location, sim_time);
+    fprintf(log_file, "Bus tiba di lokasi %d pada detik %.0f.\n", bus_current_location, sim_time);
 
     double delta_time = 0.0;
-    delta_time = unload_bus();
-    delta_time += load_bus(delta_time);
-
-    if (delta_time < 60 * 5) {
-        event_cancel(BUS_DEPART);
-        event_schedule(sim_time + 60 * 5, BUS_DEPART);
-    }
+    event_schedule(sim_time, BUS_UNLOAD);
 }
 
-double unload_bus() {
-    double unload_time = 0.0;
-    while (list_size[bus_current_location + 3] > 0) {
-        unload_time += uniform(16.0, 24.0, STREAM_LOAD_BUS);
-
+void unload_bus() {
+    if (list_size[bus_current_location + 3] > 0) {
+        double unload_time = uniform(16.0, 24.0, STREAM_LOAD_BUS);
+        
         list_remove(FIRST, bus_current_location + 3);
-        fprintf(log_file, "Penumpang <id:%d, src:%d, dest:%d> turun dari bus pada %.0f\n", (int)transfer[2], (int)transfer[3], (int)transfer[4], sim_time + unload_time);
+        fprintf(log_file, "Penumpang <id:%d, src:%d, dest:%d> turun dari bus pada detik %.0f selama %.0f detik.\n", (int)transfer[2], (int)transfer[3], (int)transfer[4], sim_time, unload_time);
 
-        double person_system_duration = sim_time - transfer[1];
+        double person_system_duration = sim_time + unload_time - transfer[1];
         sampst(person_system_duration, transfer[3] + 6);
 
         seats_taken--;
         timest((double) seats_taken, 1);
 
-        event_cancel(BUS_DEPART);
-        event_schedule(sim_time + unload_time, BUS_DEPART);
+        event_schedule(sim_time + unload_time, BUS_UNLOAD);
+    } else {
+        event_schedule(sim_time, BUS_LOAD);
     }
-    return unload_time;
 }
 
-double load_bus(double unload_time) {
-    double delta_time = 0.0;
-    double load_time = 0.0;
-    double delay = 0.0;
-
-    while(list_size[bus_current_location] > 0 && seats_taken < 20){
-        load_time += uniform(15.0, 25.0, STREAM_LOAD_BUS);
-        delta_time = unload_time + load_time;
-
+void load_bus() {
+    double time_limit = bus_stop_time + WAITING_TIME;
+    if (list_size[bus_current_location] > 0 && seats_taken < 20) {
+        double load_time = uniform(15.0, 25.0, STREAM_LOAD_BUS);
+        
         list_remove(FIRST, bus_current_location);
-        fprintf(log_file, "Penumpang <id:%d, src:%d, dest:%d> naik bus pada %.0f.\n", (int)transfer[2], (int)transfer[3], (int)transfer[4], sim_time + delta_time);
+        fprintf(log_file, "Penumpang <id:%d, src:%d, dest:%d> naik bus pada detik %.0f selama %.0f detik.\n", (int)transfer[2], (int)transfer[3], (int)transfer[4], sim_time, load_time);
 
-        delay = sim_time + delta_time - transfer[1];
+        double delay = sim_time + load_time - transfer[1];
         sampst(delay, bus_current_location);
 
         list_file(LAST, transfer[4] + 3);
-        seats_taken++;
-        timest((double) seats_taken, 1);
 
-        event_cancel(BUS_DEPART);
-        event_schedule(sim_time + delta_time, BUS_DEPART);
+        seats_taken++;
+        timest((double)seats_taken, 1);
+
+        event_schedule(sim_time + load_time, BUS_LOAD);
+    } else {
+        if (sim_time < time_limit) {
+
+        } else {
+            event_cancel(BUS_DEPART);
+            event_schedule(sim_time, BUS_DEPART);
+            fprintf(log_file, "Bus dijadwalkan pergi pada detik %.0f\n", sim_time);
+        }
     }
-    return delta_time;
 }
 
 void report() {
@@ -249,7 +254,7 @@ void report() {
         fprintf(stat_file, "\t\tMaksimum: %.0f\n", transfer[2]);
     }
     fprintf(stat_file, "\n");
-    
+
     fprintf(stat_file, "b. Delay dalam setiap antrian:\n");
     for (int i = 1; i <= 3; i++) {
         sampst(0.0, -i);
@@ -258,7 +263,7 @@ void report() {
         fprintf(stat_file, "\t\tMaksimum: %5.2f\n", transfer[3]);
     }
     fprintf(stat_file, "\n");
-    
+
     fprintf(stat_file, "c. Jumlah penumpang dalam bus:\n");
     timest(0.0, -1);
     fprintf(stat_file, "\tRata-rata: %.0f\n", transfer[1]);
@@ -268,13 +273,13 @@ void report() {
     fprintf(stat_file, "d. Durasi bus berada di setiap lokasi:\n");
     for (int i = 1; i <= 3; i++) {
         sampst(0.0, -i - 3);
-        fprintf(stat_file, "\tAntrian %d:\n", i);
+        fprintf(stat_file, "\tLokasi %d:\n", i);
         fprintf(stat_file, "\t\tRata-rata: %5.2f\n", transfer[1]);
         fprintf(stat_file, "\t\tMaksimum: %5.2f\n", transfer[3]);
         fprintf(stat_file, "\t\tMinimum: %5.2f\n", transfer[4]);
     }
     fprintf(stat_file, "\n");
-    
+
     fprintf(stat_file, "e. Waktu tempuh bus untuk melakukan satu keliling:\n");
     sampst(0.0, -10);
     fprintf(stat_file, "\tRata-rata: %.0f\n", transfer[1]);
